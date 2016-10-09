@@ -14,6 +14,8 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.StoreHouseHeader;
+import learn.sdu.pcz.test_pull_to_refresh.views.FrameLayoutView;
+import learn.sdu.pcz.test_pull_to_refresh.views.GridView;
 
 public class PtrDemoHomeFragment extends BlockMenuFragment {
 
@@ -26,6 +28,13 @@ public class PtrDemoHomeFragment extends BlockMenuFragment {
             @Override
             public void onClick(View v) {
                 getContext().pushFragmentToBackStack(GridView.class, null);
+            }
+        }));
+
+        itemInfos.add(newItemInfo("风景",R.color.cube_holo_blue_light, new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getContext().pushFragmentToBackStack(FrameLayoutView.class, null);
             }
         }));
 //        itemInfos.add(newItemInfo(R.string.ptr_demo_block_frame_layout, R.color.cube_mints_4d90fe, new OnClickListener() {
@@ -208,7 +217,7 @@ public class PtrDemoHomeFragment extends BlockMenuFragment {
         final PtrFrameLayout ptrFrameLayout = (PtrFrameLayout) view.findViewById(R.id.fragment_ptr_home_ptr_frame);
         StoreHouseHeader header = new StoreHouseHeader(getContext());
         header.setPadding(0, LocalDisplay.dp2px(20), 0, LocalDisplay.dp2px(20));
-        header.initWithString("Ultra PTR");
+        header.initWithString("loading...");
 
         ptrFrameLayout.setDurationToCloseHeader(1500);
         ptrFrameLayout.setHeaderView(header);
