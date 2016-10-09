@@ -1,7 +1,9 @@
-package learn.sdu.pcz.test_pull_to_refresh;
+package learn.sdu.pcz.test_pull_to_refresh.base;
 
 import android.os.Bundle;
 import in.srain.cube.mints.base.MintsBaseActivity;
+import learn.sdu.pcz.test_pull_to_refresh.PtrDemoHomeFragment;
+import learn.sdu.pcz.test_pull_to_refresh.R;
 
 public class MainActivity extends MintsBaseActivity {
 

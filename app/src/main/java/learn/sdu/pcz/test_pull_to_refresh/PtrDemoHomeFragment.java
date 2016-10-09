@@ -14,6 +14,7 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.StoreHouseHeader;
+import learn.sdu.pcz.test_pull_to_refresh.views.Cube_WebView;
 import learn.sdu.pcz.test_pull_to_refresh.views.FrameLayoutView;
 import learn.sdu.pcz.test_pull_to_refresh.views.GridView;
 
@@ -31,10 +32,10 @@ public class PtrDemoHomeFragment extends BlockMenuFragment {
             }
         }));
 
-        itemInfos.add(newItemInfo("风景",R.color.cube_holo_blue_light, new OnClickListener() {
+        itemInfos.add(newItemInfo("知乎（With a web view）",R.color.cube_holo_blue_light, new OnClickListener() {
             @Override
             public void onClick(View v) {
-                getContext().pushFragmentToBackStack(FrameLayoutView.class, null);
+                getContext().pushFragmentToBackStack(Cube_WebView.class, null);
             }
         }));
 //        itemInfos.add(newItemInfo(R.string.ptr_demo_block_frame_layout, R.color.cube_mints_4d90fe, new OnClickListener() {
