@@ -3,7 +3,7 @@
     package="learn.sdu.pcz.test_pull_to_refresh" >
 
     <application
-        android:name=".app.CubeApplication"
+        android:name=".app.PtrDemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
